@@ -18,12 +18,12 @@ body {
   padding: 0 0.5rem;
 }
 .music-content {
+  margin-top: 20px;
   border-radius: 15px;
   border: 2px solid rgb(126, 61, 61);
   background-color: #f7ebd4;
   text-align: center;
   max-height: 87vh;
-  margin-top: 20px;
   overflow: auto;
 }
 h3 {
@@ -40,7 +40,7 @@ h3 {
   border-bottom: 3px solid rgb(29, 29, 29);
 }
 h3 > span {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: rgb(29, 29, 29);
 }
 ::-webkit-scrollbar {
@@ -72,6 +72,7 @@ audio {
     width: 90vw;
   }
   h3 {
-  width: 90vw;
+    margin-top: 0;
+    width: 90vw;
   }
 }
