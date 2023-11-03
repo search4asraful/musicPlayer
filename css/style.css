@@ -1,32 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(29, 29, 29);
+  height: 90vh;
 }
 
 .music-container {
   max-width: 500px;
   min-width: 300px;
-  margin: 30px auto;
+  margin: auto;
   border-radius: 5px;
-  padding: 0.5rem;
-  padding-bottom: 0;
+  padding: 0 0.5rem;
 }
 .music-content {
-    margin-top: .5rem;
-    border-radius: 15px;
-    background-color: rgb(217, 197, 159);
-    border: 2px solid white;
-    padding: .2rem 1rem;
-    text-align: center;
+  border-radius: 15px;
+  border: 2px solid rgb(126, 61, 61);
+  background-color: #f7ebd4;
+  text-align: center;
+  max-height: 85vh;
+  margin-top: 15px;
+  overflow: auto;
 }
 h3 {
-    padding-bottom: 1rem;
+  margin-top: 15px;
+  position: fixed;
+  background-color: rgb(217, 197, 159);
+  width: 490px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  padding: 0.8rem 0;
+  top: 0;
   color: #9f2f2f;
-  border-bottom: 3px solid #f2f2f2;
+  border-bottom: 3px solid rgb(29, 29, 29);
+}
+h3 > span {
+  font-size: .8rem;
+  color: rgb(29, 29, 29);
+}
+::-webkit-scrollbar {
+  display: none;
 }
 ul {
   list-style-type: decimal-leading-zero;
-text-align: left;
+  text-align: left;
+  margin: 3.5rem 3rem 0;
 }
 li {
   cursor: pointer;
@@ -35,5 +58,17 @@ li {
 }
 
 audio {
-  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1.6rem;
+  width: 30rem;
+}
+
+@media screen and (max-width: 600px) {
+  audio {
+    width: 90vw;
+  }
 }
