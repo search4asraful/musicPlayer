@@ -22,8 +22,8 @@ body {
   border: 2px solid rgb(126, 61, 61);
   background-color: #f7ebd4;
   text-align: center;
-  max-height: 85vh;
-  margin-top: 15px;
+  max-height: 87vh;
+  margin-top: 20px;
   overflow: auto;
 }
 h3 {
@@ -72,6 +72,6 @@ audio {
     width: 90vw;
   }
   h3 {
-  margin-top: 0;
+  width: 90vw;
   }
 }
